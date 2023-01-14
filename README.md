@@ -1,4 +1,4 @@
-# DeepLDA: Identification of associations between lncRNA and drug resistance based on deep learning and attention mechanism
+# Identification of associations between lncRNA and drug resistance based on deep learning and attention mechanism (DeepLDA)
 
 ## Requirements
 DeepLDA is tested in the conda environment. Note: Before using DeepLDA, users first need to prepare the following softwares in the execution environment：
