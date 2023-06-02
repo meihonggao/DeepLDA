@@ -11,7 +11,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torch.autograd import Variable
 from utils import parameter_parser,load_data, metrics,Auc,get_edge_index
-from models import MVG_LGA
+from models import Deep_LDA
 
 def train(model,args,dataset):
     optimizer = torch.optim.Adam(model.parameters(), 
@@ -145,7 +145,7 @@ def main():
     args.l_f_nfeat=dataset['Lnc_f_features'].shape[1]
     args.g_f_nfeat=dataset['Gene_f_features'].shape[1]
     #args.nclass=dataset['Gene_f_features'].shape[1]
-    model = MVG_LGA(args)
+    model = Deep_LDA(args)
     if args.cuda:
         model.cuda()
         dataset['Lnc_f_edge_index'] = dataset['Lnc_f_edge_index'].cuda()
