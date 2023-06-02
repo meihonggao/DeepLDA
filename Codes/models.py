@@ -4,7 +4,7 @@ import torch.nn.functional as F
 from layers import GATLayer,GCNLayer,CNNLayer
 from utils import get_adj
 
-class MVG_LGA(nn.Module):
+class Deep_LDA(nn.Module):
     def __init__(self, args):
         """Dense version of MVG_LGA."""
         super(MVG_LGA, self).__init__()
